@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SignalPlusOS.ai - 交易 Agent 时代的云端计算生态</title>
+    <title>SignalPlusOS.ai - AI Agent 时代的云端计算生态</title>
     <meta
       name="description"
-      content="SignalPlusOS.ai 是交易 Agent 时代的云端计算生态：Compute Unit、SignalPlusOS Kernel、AI-built Apps、Marketplace 与机构级数据执行基础设施。"
+      content="SignalPlusOS.ai 是 AI Agent 时代的云端计算生态：云端设备、SignalPlusOS、开发工具、系统接口、SignalDB 与 App 市场，在同一个可信环境里同时出现。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -23,9 +23,10 @@
         <a href="#os" data-page-link="os">操作系统</a>
         <a href="#dev" data-page-link="dev">开发工具</a>
         <a href="#market" data-page-link="market">App 市场</a>
+        <a href="#solutions" data-page-link="solutions">解决方案</a>
       </nav>
       <a class="nav-cta" href="#alpha" data-page-link="alpha">申请 Alpha</a>
-      <div class="language-switch" aria-label="Language switch">
+      <div class="language-switch" aria-label="Language switch" hidden>
         <button type="button" class="is-active" data-language-option="zh">中文</button>
         <button type="button" data-language-option="en">English</button>
       </div>
@@ -36,13 +37,13 @@
       <section class="hero section-dark" id="hero">
         <div class="hero-copy reveal">
           <p class="product-name">SignalPlusOS.ai</p>
-          <h1>交易 Agent 时代的云端计算生态。</h1>
+          <h1>AI Agent 时代的云端计算生态。</h1>
           <p class="hero-subtitle">
-            云端交易电脑、SignalPlusOS Kernel、AI-built Apps、Marketplace、数据与执行基础设施，在同一个可信环境里同时出现。
+            云端设备、SignalPlusOS、开发工具、系统接口、数据库和 App 市场，在同一个可信环境里同时出现。
           </p>
           <div class="hero-actions" aria-label="Hero actions">
             <a href="#ecosystem">浏览生态</a>
-            <a href="#alpha">开始配置</a>
+            <a href="#alpha" data-page-link="alpha">申请 Alpha</a>
           </div>
         </div>
 
@@ -135,74 +136,48 @@
         <div class="section-kicker reveal">产品宇宙</div>
         <h2 class="section-title reveal">全系生态，细细看。</h2>
         <p class="section-copy reveal">
-          DevPod 负责创造，Compute Unit 负责运行。SignalPlusOS 把数据、模型、执行、记忆和安全放进系统层，Apps 通过 Marketplace 生长和流通。
+          SignalPlusOS.ai 由云端设备、操作系统、开发工具、系统接口、数据库和 App 市场组成。
         </p>
         <div class="family-rail reveal" aria-label="SignalPlusOS.ai product family">
-          <a class="family-card" href="#dev" data-page-link="dev" data-target-section="#dev-tools-hero">
-            <div class="family-icon devpod-icon"></div>
-            <h3>DevPod</h3>
-            <p>为交易 App 准备的云端开发室。Codex、Claude Code、SignalPlusOS Agent、测试和打包都在这里。</p>
-          </a>
           <a class="family-card" href="#device" data-page-link="device" data-target-section="#compute">
-            <div class="family-icon cu-icon"></div>
-            <h3>Compute Unit</h3>
-            <p>运行交易 App 的云端设备。24/7 在线，靠近市场，内置 Runtime Ops 和交易网络。</p>
+            <div class="family-icon devpod-icon"></div>
+            <h3>云端设备</h3>
+            <p>DevPod 用来创造，Compute Unit 用来运行。</p>
           </a>
           <a class="family-card" href="#os" data-page-link="os" data-target-section="#kernel">
             <div class="family-icon kernel-icon"></div>
             <h3>SignalPlusOS</h3>
-            <p>交易操作系统。管理权限、密钥、执行、风控、状态和安全边界。</p>
+            <p>把权限、密钥、状态、网络、安全边界和系统能力放进操作系统层。</p>
           </a>
-          <a class="family-card" href="#os" data-page-link="os" data-target-section="#model-hub">
+          <a class="family-card" href="#dev" data-page-link="dev" data-target-section="#dev-tools-hero">
+            <div class="family-icon cu-icon"></div>
+            <h3>开发工具</h3>
+            <p>在 DevPod 中使用 Coding Agents，把想法变成可以安装的 App。</p>
+          </a>
+          <a class="family-card" href="#os" data-page-link="os" data-target-section="#typed-data">
             <div class="family-icon llm-icon"></div>
-            <h3>SignalPlusOS APIs</h3>
-            <p>金融数据、执行连接，以及 OpenAI、Claude、Gemini 等 LLM API，都作为系统接口提供给 App。</p>
+            <h3>系统接口</h3>
+            <p>API Gateway 与 LLM API Runtime，把外部能力接成 App 可以调用的系统接口。</p>
           </a>
           <a class="family-card" href="#os" data-page-link="os" data-target-section="#signaldb">
             <div class="family-icon data-memory-icon"></div>
             <h3>SignalDB</h3>
-            <p>每台 CU 的交易记忆。高吞吐写入、长窗口查询和可回放交易时间线。</p>
+            <p>SignalPlusOS 内置的时序数据库，记录 App 状态、事件和运行时间线。</p>
           </a>
           <a class="family-card" href="#market" data-page-link="market" data-target-section="#apps">
             <div class="family-icon app-market-icon"></div>
             <h3>Apps &amp; Marketplace</h3>
-            <p>发现、安装、Fork、发布金融 App，并让收益沿贡献链回流。</p>
+            <p>安装、Fork、发布 App，并让价值回流。</p>
           </a>
-        </div>
-      </section>
-      <section class="signalplus section-dark">
-        <div class="section-kicker reveal">by SignalPlus</div>
-        <h2 class="section-title reveal">不是凭空出现的 AI 概念，而是多年交易基础设施演进后的下一步。</h2>
-        <div class="timeline reveal" aria-label="SignalPlus evolution">
-          <article>
-            <span>2022</span>
-            <strong>Trading Terminal</strong>
-            <p>Professional options trading suite.</p>
-          </article>
-          <article>
-            <span>2022-23</span>
-            <strong>MMBot</strong>
-            <p>24/7 automated risk management.</p>
-          </article>
-          <article>
-            <span>2023</span>
-            <strong>Structured Products Automation</strong>
-            <p>RFQ and issuance hedging.</p>
-          </article>
-          <article class="active">
-            <span>2026+</span>
-            <strong>SignalPlusOS.ai</strong>
-            <p>Cloud ecosystem for agentic trading.</p>
-          </article>
         </div>
       </section>
       </div>
       <div class="site-page" data-page="device" id="page-device">
       <section class="cu-hero section-dark" id="compute">
         <div class="section-kicker reveal">Compute Unit</div>
-        <h2 class="section-title reveal">为交易 Agent 常驻运行的云端设备。</h2>
+        <h2 class="section-title reveal">常驻运行的云端计算设备。</h2>
         <p class="section-copy reveal">
-          Compute Unit 不是普通云服务器。它是 SignalPlusOS 为交易 App 准备的运行设备：24/7 在线，靠近市场，接入数据与执行，记录状态与审计，并让每个 App 在受控环境中运行。
+          Compute Unit 是 App 的云端运行设备。它可以 24/7 在线，保持状态，连接系统能力，并在 SignalPlusOS 的边界内运行已安装的 App。
         </p>
         <div class="cu-hero-stage reveal" aria-label="Compute Unit cloud trading runtime">
           <div class="cu-hero-grid" aria-hidden="true"></div>
@@ -217,41 +192,16 @@
           <div class="cu-runtime-orbit orbit-runtime"></div>
           <div class="cu-runtime-orbit orbit-network"></div>
           <div class="cu-hero-signal signal-data">Gateway Data</div>
-          <div class="cu-hero-signal signal-exec">Execution Route</div>
+          <div class="cu-hero-signal signal-exec">Action Route</div>
           <div class="cu-hero-signal signal-audit">Audit Trail</div>
           <div class="cu-hero-signal signal-state">SignalDB State</div>
-          <div class="cu-hero-signal signal-risk">Risk Guardrails</div>
-          <div class="cu-hero-signal signal-network">Market-adjacent Network</div>
+          <div class="cu-hero-signal signal-risk">Runtime Boundary</div>
+          <div class="cu-hero-signal signal-network">System Network</div>
           <div class="cu-hero-panel">
             <span>Runtime Layer</span>
             <strong>24/7 Online</strong>
-            <p>App Health · Gateway Health · Order Events · Cost View</p>
+            <p>App Health · Gateway Health · System Events · Cost View</p>
           </div>
-        </div>
-      </section>
-
-      <section class="runtime-challenges section-light" id="runtime-challenges">
-        <div class="section-kicker reveal">Runtime Challenges</div>
-        <h2 class="section-title reveal">创建 App 只是一刻，稳定运行才是每天。</h2>
-        <p class="section-copy reveal">
-          交易 Agent 一旦上线，就要持续处理告警、数据异常、订单状态、账户变化、系统故障和资源消耗。CU 把这些运行问题放进同一套云端设备和操作系统里，而不是让每个开发者、每个用户自己搭一套运维体系。
-        </p>
-        <div class="challenge-grid reveal" aria-label="Compute Unit runtime challenges">
-          <article>
-            <span>01</span>
-            <h3>告警不会自己消失</h3>
-            <p>行情断流、订单异常、仓位变化、余额事件、App 报错，都需要被及时发现、分类和处理。CU 把这些运行事件统一接入，而不是让用户 24 小时盯着每个 App。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>依赖越多，越需要系统稳定性</h3>
-            <p>一个交易 App 可能同时依赖行情、账户、执行、LLM、SignalDB 和 Gateway。CU 负责监控这些依赖关系，让问题更早暴露、更快定位。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>资源不是越堆越好</h3>
-            <p>不同 App 对算力、存储、网络和数据的需求不同。CU 让运行资源与 App 工作负载匹配，避免每个团队都从零搭服务器、重复买资源。</p>
-          </article>
         </div>
       </section>
 
@@ -259,15 +209,15 @@
         <div class="section-kicker reveal">Runtime Ops</div>
         <h2 class="section-title reveal">把 7×24 运维，装进每台 CU。</h2>
         <p class="section-copy reveal">
-          CU 不只是运行 App 的算力，也内置面向金融场景的运行运维能力。告警、巡检、根因分析、变更、复盘和成本视图，会围绕 App、Gateway、订单、仓位、账户和资源使用持续工作。低风险事件自动闭环，高风险动作进入专家确认。
+          CU 不只是运行 App 的算力，也内置长期运行所需的运维能力。告警、巡检、根因分析、变更、复盘和成本视图，会围绕 App、Gateway、运行状态和资源使用持续工作。
         </p>
         <div class="ops-console reveal" aria-label="Compute Unit operations console">
           <article class="ops-pane alert-inbox">
             <span class="ops-label">Event Hub</span>
             <h3>事件中枢</h3>
-            <p>告警、工单、IM、运行日志和账户事件汇入同一个运行视图，让 CU 不只是发现故障，而是理解故障发生在哪条业务链路上。</p>
-            <div class="alert-row high"><strong>Order route exception</strong><em>expert confirm</em></div>
-            <div class="alert-row"><strong>Account event</strong><em>classified</em></div>
+            <p>告警、工单、运行日志和系统事件汇入同一个运行视图，让 CU 不只是发现异常，而是理解异常发生在哪条链路上。</p>
+            <div class="alert-row high"><strong>Runtime exception</strong><em>needs review</em></div>
+            <div class="alert-row"><strong>System event</strong><em>classified</em></div>
             <div class="alert-row"><strong>Low-risk alert</strong><em>auto closed</em></div>
           </article>
           <article class="ops-pane patrol-timeline">
@@ -284,17 +234,17 @@
           <article class="ops-pane workbench">
             <span class="ops-label">RCA & Cost View</span>
             <h3>根因与成本透视</h3>
-            <p>从 App 到 Gateway、账户、网络和底层资源，CU 能把异常和成本还原到具体业务、产品和资源链路上。</p>
+            <p>从 App 到 Gateway、网络和底层资源，CU 能把异常和成本还原到具体业务、产品和资源链路上。</p>
             <div class="workbench-window">
               <strong>Root cause path</strong>
-              <span>App → Gateway → Account → Network → Compute</span>
+              <span>App → Gateway → Network → Compute</span>
             </div>
           </article>
           <div class="ops-status-strip" aria-label="Runtime status">
             <span>App Health</span>
             <span>Gateway Health</span>
-            <span>Order Events</span>
-            <span>Position Events</span>
+            <span>System Events</span>
+            <span>Resource Events</span>
             <span>Audit Trail</span>
             <span>Cost View</span>
           </div>
@@ -303,122 +253,71 @@
 
       <section class="cu-lineup section-light" id="cu-lineup">
         <div class="section-kicker reveal">Compute Unit</div>
-        <h2 class="section-title reveal">看看哪台 CU 适合你的交易 Agent。</h2>
+        <h2 class="section-title reveal">看看哪台 CU 适合你的 Agent App。</h2>
         <p class="section-copy reveal">
-          这不是 SaaS 套餐。它是一台云端交易设备，承载你的 AI-built Apps、数据连接、执行参数和审计状态。
+          这不是 SaaS 套餐。它是一台常驻运行的云端计算设备，承载你的 App、系统能力、运行状态和长期记录。
         </p>
         <div class="cu-models reveal" aria-label="Compute Unit models">
           <article class="cu-model">
             <div class="model-device"></div>
             <h3>CU Core</h3>
-            <p>个人策略与轻量监控。</p>
+            <p>个人 App、轻量 Agent 和基础自动化。</p>
             <dl>
-              <div><dt>Runtime Ops</dt><dd>Basic alerts</dd></div>
-              <div><dt>SignalDB</dt><dd>Core timeline</dd></div>
-              <div><dt>Network</dt><dd>Shared route</dd></div>
-              <div><dt>Co-location</dt><dd>Regional zone</dd></div>
-              <div><dt>Private Line</dt><dd>Optional</dd></div>
-              <div><dt>Data Pack</dt><dd>Core market pack</dd></div>
+              <div><dt>运行</dt><dd>Basic runtime</dd></div>
+              <div><dt>存储</dt><dd>Core timeline</dd></div>
+              <div><dt>网络</dt><dd>Shared route</dd></div>
+              <div><dt>隔离</dt><dd>Personal boundary</dd></div>
+              <div><dt>数据</dt><dd>Core gateway</dd></div>
+              <div><dt>支持</dt><dd>Standard support</dd></div>
             </dl>
           </article>
           <article class="cu-model featured">
             <div class="model-device pro"></div>
             <h3>CU Pro</h3>
-            <p>跨市场 Agent 与组合工具。</p>
+            <p>跨数据源 App、组合工作流和多 Agent 任务。</p>
             <dl>
-              <div><dt>Runtime Ops</dt><dd>Alert inbox</dd></div>
-              <div><dt>SignalDB</dt><dd>Replay timeline</dd></div>
-              <div><dt>Network</dt><dd>Priority route</dd></div>
-              <div><dt>Co-location</dt><dd>Market-adjacent</dd></div>
-              <div><dt>Private Line</dt><dd>Cluster link</dd></div>
-              <div><dt>Data Pack</dt><dd>Cross-market pack</dd></div>
+              <div><dt>运行</dt><dd>Alert inbox</dd></div>
+              <div><dt>存储</dt><dd>Replay timeline</dd></div>
+              <div><dt>网络</dt><dd>Priority route</dd></div>
+              <div><dt>隔离</dt><dd>App boundary</dd></div>
+              <div><dt>数据</dt><dd>Extended gateway</dd></div>
+              <div><dt>支持</dt><dd>Priority support</dd></div>
             </dl>
           </article>
           <article class="cu-model">
             <div class="model-device max"></div>
             <h3>CU Max</h3>
-            <p>高频数据、复杂风控与多账户。</p>
+            <p>高频数据、长时间运行、复杂状态和多 App 并行。</p>
             <dl>
-              <div><dt>Runtime Ops</dt><dd>Auto patrol</dd></div>
-              <div><dt>SignalDB</dt><dd>Deep retention</dd></div>
-              <div><dt>Network</dt><dd>Execution route</dd></div>
-              <div><dt>Co-location</dt><dd>Multi-region</dd></div>
-              <div><dt>Private Line</dt><dd>Dedicated path</dd></div>
-              <div><dt>Data Pack</dt><dd>Institutional pack</dd></div>
+              <div><dt>运行</dt><dd>Auto patrol</dd></div>
+              <div><dt>存储</dt><dd>Deep retention</dd></div>
+              <div><dt>网络</dt><dd>Dedicated route</dd></div>
+              <div><dt>隔离</dt><dd>Team boundary</dd></div>
+              <div><dt>数据</dt><dd>Advanced gateway</dd></div>
+              <div><dt>支持</dt><dd>Ops workbench</dd></div>
             </dl>
           </article>
           <article class="cu-model">
             <div class="model-device ultra"></div>
             <h3>CU Ultra</h3>
-            <p>机构团队、白标与专用运行环境。</p>
+            <p>团队、机构和专用运行环境。</p>
             <dl>
-              <div><dt>Runtime Ops</dt><dd>Ops workbench</dd></div>
-              <div><dt>SignalDB</dt><dd>Audit vault</dd></div>
-              <div><dt>Network</dt><dd>Private fabric</dd></div>
-              <div><dt>Co-location</dt><dd>Dedicated zone</dd></div>
-              <div><dt>Private Line</dt><dd>Custom topology</dd></div>
-              <div><dt>Data Pack</dt><dd>Custom pack</dd></div>
+              <div><dt>运行</dt><dd>Dedicated runtime</dd></div>
+              <div><dt>存储</dt><dd>Custom retention</dd></div>
+              <div><dt>网络</dt><dd>Private fabric</dd></div>
+              <div><dt>隔离</dt><dd>Dedicated boundary</dd></div>
+              <div><dt>数据</dt><dd>Custom gateway</dd></div>
+              <div><dt>支持</dt><dd>Dedicated support</dd></div>
             </dl>
           </article>
         </div>
       </section>
 
-      <section class="colo-network section-dark" id="colo-network">
-        <div class="section-kicker reveal">Co-location Network</div>
-        <h2 class="section-title reveal">把 CU 放到更靠近市场的地方。</h2>
-        <p class="section-copy reveal">
-          交易所和券商分布在全球不同区域。SignalPlusOS 可以把 Compute Unit 部署在更靠近关键交易场所的区域，并通过跨区域专线连接不同交易集群，减少公共互联网路径带来的不确定性。
-        </p>
-        <div class="network-stage reveal" aria-label="Compute Unit co-location and private line network">
-          <div class="network-map">
-            <div class="network-line line-tokyo-singapore"></div>
-            <div class="network-line line-singapore-london"></div>
-            <div class="network-line line-london-newyork"></div>
-            <div class="network-line line-newyork-tokyo"></div>
-            <article class="network-node node-tokyo">
-              <strong>Tokyo</strong>
-              <span>Market-adjacent zone</span>
-            </article>
-            <article class="network-node node-singapore">
-              <strong>Singapore</strong>
-              <span>Gateway route</span>
-            </article>
-            <article class="network-node node-london">
-              <strong>London</strong>
-              <span>Private line</span>
-            </article>
-            <article class="network-node node-newyork">
-              <strong>New York</strong>
-              <span>Execution route</span>
-            </article>
-            <div class="network-core">
-              <span>CU Network Fabric</span>
-              <strong>Private trading routes</strong>
-              <p>Co-location · Gateway · Execution</p>
-            </div>
-          </div>
-        </div>
-        <div class="network-cards reveal" aria-label="Co-location network advantages">
-          <article>
-            <h3>靠近撮合引擎</h3>
-            <p>交易执行不是只看代码，也看网络路径。CU 可以部署在更靠近关键交易场所的区域，让 App 运行在更适合交易的网络环境里。</p>
-          </article>
-          <article>
-            <h3>跨区域专线</h3>
-            <p>当交易工作流横跨亚洲、欧洲和美国市场，SignalPlusOS 可以通过交易集群之间的专线降低链路不稳定性。</p>
-          </article>
-          <article>
-            <h3>比普通云服务器更像交易设备</h3>
-            <p>普通云服务器给你算力；CU 给你靠近市场的运行位置、交易网络、数据接入、执行连接和审计环境。</p>
-          </article>
-        </div>
-      </section>
-
       <section class="portal section-light" id="portal">
-        <div class="section-kicker reveal">Personal Cloud Server</div>
-        <h2 class="section-title reveal">下一代交易设备，不在手里，在云端。</h2>
+        <div class="section-kicker reveal">Personal Cloud Device</div>
+        <h2 class="section-title reveal">下一代个人设备，在云端。</h2>
         <p class="section-copy reveal">
-          手机、电脑、眼镜，都只是进入 Compute Unit 的方式。真正运行的是云端 CU：App 在那里 24/7 在线，连接市场，记录状态，并由 SignalPlusOS 保持同一套权限、风控和审计。
+          手机、电脑、眼镜，都只是进入 Compute Unit 的方式。真正运行的是云端，真正保持一致的是 SignalPlusOS：无论你从哪里打开，连接的都是同一个运行环境。
         </p>
         <div class="portal-stage reveal" aria-label="All screens connect to the same Compute Unit">
           <div class="portal-cu">
@@ -483,30 +382,24 @@
           App 的生命在云端，所有屏幕只是入口。换设备，不换环境；关掉屏幕，运行不停。
         </p>
       </section>
+      <section class="alpha section-light">
+        <div class="section-kicker reveal">Alpha</div>
+        <h2 class="section-title reveal">把你的第一台云端设备配置起来。</h2>
+        <p class="section-copy reveal">
+          申请 DevPod，配置 Compute Unit，把第一个 App 放进自己的云端运行环境。
+        </p>
+        <div class="hero-actions reveal" aria-label="Device alpha action">
+          <a href="#alpha" data-page-link="alpha">申请 Alpha</a>
+        </div>
+      </section>
       </div>
       <div class="site-page" data-page="os" id="page-os">
-      <section class="kernel section-light" id="kernel">
-        <div class="section-kicker reveal">SignalPlusOS Kernel</div>
-        <h2 class="section-title reveal">设备之上，是交易操作系统。</h2>
+      <section class="kernel section-light" id="os-hero">
+        <div class="section-kicker reveal">SignalPlusOS</div>
+        <h2 class="section-title reveal">把 Agent App 的复杂性，放进操作系统层。</h2>
         <p class="section-copy reveal">
-          App 可以自由创造，但数据、执行、权限、密钥、风控、状态和审计，都由 SignalPlusOS 授权与管理。
+          App 可以被快速创造，但长期运行需要数据、工具、密钥、权限、状态、网络、记录和运维。SignalPlusOS 把这些能力收进系统层，让 App 不必各自重建底层基础设施。
         </p>
-        <div class="kernel-stage reveal" aria-label="SignalPlusOS Kernel system controls">
-          <div class="app-window">
-            <div class="window-bar"><span></span><span></span><span></span></div>
-            <div class="window-grid">
-              <div class="chart-panel"></div>
-              <div class="order-panel"></div>
-              <div class="risk-panel"></div>
-            </div>
-          </div>
-          <div class="system-control control-data">Data</div>
-          <div class="system-control control-execution">Execution</div>
-          <div class="system-control control-key">Key</div>
-          <div class="system-control control-permission">Permission</div>
-          <div class="system-control control-risk">Risk</div>
-          <div class="system-control control-audit">Audit</div>
-        </div>
       </section>
       <section class="complexity-transfer section-light" id="complexity-transfer">
         <div class="section-kicker reveal">Why SignalPlusOS</div>
@@ -521,17 +414,17 @@
         </div>
         <h2 class="section-title reveal">复杂性不会消失，只会转移。</h2>
         <p class="section-copy reveal">
-          AI 让 App 更容易被创造，但交易系统的复杂性仍然存在：数据、执行、密钥、权限、状态、网络、运维和长期记录。SignalPlusOS 把这些复杂性转移到操作系统层，让开发者专注于 App，让用户专注于交易。
+          AI 让 App 更容易被创造，但系统复杂性仍然存在：数据、执行、密钥、权限、状态、网络、运维和长期记录。SignalPlusOS 把这些复杂性转移到操作系统层，让开发者专注于 App，让用户专注于使用。
         </p>
 
         <div class="complexity-stage reveal" aria-label="Complexity transfer into SignalPlusOS">
-          <div class="complexity-chaos" aria-label="Trading system complexity">
-            <span>Exchange APIs</span>
+          <div class="complexity-chaos" aria-label="System complexity">
+            <span>External APIs</span>
             <span>Market Data</span>
             <span>API Keys</span>
-            <span>Order Routing</span>
+            <span>Action Routing</span>
             <span>Rate Limits</span>
-            <span>Venue Failures</span>
+            <span>Service Failures</span>
             <span>Latency</span>
             <span>State</span>
             <span>Logs</span>
@@ -561,28 +454,51 @@
         <div class="complexity-proof reveal" aria-label="SignalPlusOS complexity transfer">
           <article>
             <span>01</span>
-            <h3>数据和接口，交给 Gateway</h3>
-            <p>App 不需要各自接交易所、行情源、账户接口、资讯和外部数据。API Gateway 把金融世界接成系统能力，App 只向 SignalPlusOS 请求数据。</p>
+            <h3>数据和接口，交给 API Gateway</h3>
+            <p>App 不需要各自接外部数据源和服务。API Gateway 把外部能力接成系统接口，App 只向 SignalPlusOS 请求能力。</p>
           </article>
           <article>
             <span>02</span>
             <h3>运行和运维，交给 CU</h3>
-            <p>交易 App 不是生成后就结束。它要 24/7 在线，处理告警、订单、仓位、资源、网络和故障。CU 承接这些长期运行问题。</p>
+            <p>App 不是生成后就结束。它要长期在线，处理状态、资源、网络和故障。CU 承接这些长期运行问题。</p>
           </article>
           <article>
             <span>03</span>
             <h3>密钥和边界，交给 Kernel</h3>
-            <p>App 不直接碰密钥，不随意联网，不绕过权限下单。SignalPlusOS Kernel 管理 Key、权限、执行、风控和运行边界。</p>
+            <p>App 不直接碰密钥，不随意联网，不绕过权限。SignalPlusOS Kernel 管理 Key、权限、执行和运行边界。</p>
           </article>
         </div>
 
-        <p class="complexity-bottom reveal">你用 AI 创造 App。SignalPlusOS 承接交易系统的复杂性。</p>
+        <p class="complexity-bottom reveal">你用 AI 创造 App。SignalPlusOS 承接系统复杂性。</p>
+      </section>
+      <section class="kernel section-light" id="kernel">
+        <div class="section-kicker reveal">Kernel</div>
+        <h2 class="section-title reveal">App 可以自由创造，能力必须由系统授权。</h2>
+        <p class="section-copy reveal">
+          SignalPlusOS Kernel 管理 App 对数据、工具、密钥、权限、网络、执行和状态的调用。App 不直接接触底层风险，而是在系统边界内运行。
+        </p>
+        <div class="kernel-stage reveal" aria-label="SignalPlusOS Kernel system controls">
+          <div class="app-window">
+            <div class="window-bar"><span></span><span></span><span></span></div>
+            <div class="window-grid">
+              <div class="chart-panel"></div>
+              <div class="order-panel"></div>
+              <div class="risk-panel"></div>
+            </div>
+          </div>
+          <div class="system-control control-data">Data</div>
+          <div class="system-control control-execution">Actions</div>
+          <div class="system-control control-key">Keys</div>
+          <div class="system-control control-permission">Permissions</div>
+          <div class="system-control control-risk">State</div>
+          <div class="system-control control-audit">Records</div>
+        </div>
       </section>
       <section class="model-hub section-light" id="model-hub">
         <div class="section-kicker reveal">LLM API Runtime</div>
         <h2 class="section-title reveal">让每台 CU，都能调用超多 LLM API</h2>
         <p class="section-copy reveal">
-          SignalPlusOS.ai 把 OpenAI、Claude、Gemini 主流模型接入为系统能力。开发者创建 App 时，可以调用不同模型能力；用户安装 App 后，也可以在自己的 CU 中选择模型运行。模型调用不会集中压在开发者身上，而是随着每个用户、每个 App、每个运行事件，在各自 CU 中独立计量。
+          SignalPlusOS 把 OpenAI、Claude、Gemini 等主流 LLM API 接入为系统能力。开发者创建 App 时，可以调用不同模型能力；用户安装 App 后，也可以在自己的 CU 中选择模型运行。LLM 调用不会集中压在开发者身上，而是随着每个用户、每个 App、每个运行事件，在各自 CU 中独立计量。
         </p>
         <div class="model-hub-stage reveal" aria-label="SignalPlusOS Model Hub system layer">
           <div class="model-provider-row">
@@ -650,166 +566,95 @@
 
         <div class="model-feature-cards reveal" aria-label="Model Hub features">
           <article>
-            <h3>主流 LLM API，系统级接入</h3>
-            <p>OpenAI、Claude、Gemini 等模型能力，被接入 SignalPlusOS 的系统层。开发者创建 App 时，不需要逐家开通模型平台、管理 API Key 或适配不同接口。</p>
+            <h3>OpenAI、Claude、Gemini，系统级接入</h3>
+            <p>开发者创建 App 时，不需要逐家开通模型平台、管理 API Key 或适配不同接口。SignalPlusOS 已经把主流 LLM API 接入为系统能力。</p>
           </article>
           <article>
             <h3>同一个 App，多种模型跑法</h3>
-            <p>同一个 App 安装到不同用户的 CU 后，可以调用不同模型运行。开发者不用为每个模型维护不同版本，用户也不用被开发者预设的模型绑定。</p>
+            <p>用户安装 App 后，可以在自己的 CU 中选择 OpenAI、Claude、Gemini 或更多模型运行。同一个 App，可以在不同 CU 里用不同模型跑。</p>
           </article>
           <article>
             <h3>每台 CU，独立调用与计量</h3>
-            <p>App 运行时的模型调用，不会集中消耗开发者的 API Key。每个用户的 CU 都有自己的模型运行环境，调用、计量和成本归属各自独立。</p>
+            <p>App 运行时调用的 OpenAI、Claude、Gemini 等 LLM API，不会集中消耗开发者的 API Key。每个用户的 CU 独立调用、独立计量、独立承担成本。</p>
           </article>
         </div>
       </section>
       <section class="typed-surface section-dark" id="typed-data">
         <div class="section-kicker reveal">API Gateway</div>
-        <h2 class="section-title reveal">把整个金融世界，接成 App 可以调用的系统接口。</h2>
+        <h2 class="section-title reveal">把外部能力，接成 App 可以调用的系统接口。</h2>
         <p class="section-copy reveal">
-          SignalPlusOS Runtime 通过 API Gateway 接入多资产行情、衍生品、期权、预测市场、DeFi、宏观经济、上市公司披露、能源、链上 TVL、LLM 推理与资讯等 typed data surface。App 不需要自己联网，也不需要逐个接数据源；它只需要向 SignalPlusOS 请求标准化、权限化、可审计的数据能力。
+          API Gateway 让 App 不必各自联网、各自接 API、各自处理格式和权限。数据、工具、服务、资讯、执行能力和 LLM 调用，都可以通过系统接口被 App 请求、授权和记录。
         </p>
 
         <div class="atlas-copy-row reveal" aria-label="API Gateway proof points">
           <article>
-            <strong>数据不再散落在外部 API 里</strong>
-            <span>行情、账户、订单、期权、DeFi、宏观、披露、链上和资讯数据，都被 API Gateway 接成统一的系统能力。App 不需要自己联网去找数据源。</span>
+            <strong>App 不直接接外部世界</strong>
+            <span>App 只向 SignalPlusOS 请求能力，不各自处理外部 API、密钥、格式和失败模式。</span>
           </article>
           <article>
-            <strong>每种数据，都有类型和边界</strong>
-            <span>ticker、order book、option chain、funding rate、positions、TVL、XBRL、macro series、LLM responses 等能力，都以 typed interface 暴露给 App，并受权限和风控约束。</span>
+            <strong>能力被标准化</strong>
+            <span>外部数据、工具和服务会被整理成稳定的 typed interface，让 App 更容易调用，也更容易被系统管理。</span>
           </article>
           <article>
-            <strong>开发者只关心要什么数据</strong>
-            <span>App 只需要向 SignalPlusOS 请求数据和能力，不需要处理不同市场、不同协议、不同格式、不同实时流的接入细节。交易相关基建由操作系统统一完成。</span>
+            <strong>请求有边界</strong>
+            <span>每一次能力调用都经过权限、计量和运行边界，而不是让 App 自由访问所有外部资源。</span>
           </article>
-        </div>
-
-        <div class="endpoint-lab reveal" aria-label="SignalPlusOS typed data families">
-          <div class="data-family-wall">
-            <button type="button" class="data-family-strip" data-family-title="Multi-Asset Market Data" data-family-endpoints="GET /market/ticker|GET /market/trades/latest|GET /market/order-book|GET /market/ohlcv" data-family-types="Ticker[]|LatestTrade|OrderBookSnapshot|OHLCVBar[]" data-family-call="FluxGrid requested market.order_book">
-              <span class="family-number">01</span><strong>Multi-Asset Market Data</strong><em>Typed · Realtime · Historical</em><p>ticker · latest trade · quote · order book · OHLCV · snapshot · auction · metadata</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Equities" data-family-endpoints="GET /equities/trades/latest|GET /equities/quotes|GET /equities/bars|GET /equities/movers" data-family-types="EquityTrade|EquityQuote|EquityBar[]|MarketMover[]" data-family-call="FluxGrid requested equities.market_movers">
-              <span class="family-number">02</span><strong>Equities</strong><em>Typed · Historical · Metadata</em><p>latest trade · quotes · bars · market movers · most-active · logo · exchange metadata</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Crypto Spot" data-family-endpoints="GET /crypto/spot/price|GET /crypto/spot/order-book|GET /crypto/spot/ohlcv|GET /crypto/global" data-family-types="SpotPrice|SpotOrderBook|SpotCandle[]|CryptoGlobalSnapshot" data-family-call="FluxGrid requested crypto.spot.snapshot">
-              <span class="family-number">03</span><strong>Crypto Spot</strong><em>Typed · Realtime · Metadata</em><p>price · order book · trades · OHLCV · snapshot · global market · trending coins</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Perps / Futures" data-family-endpoints="GET /perps/funding-rate|GET /perps/mark-price|GET /futures/open-interest|GET /perps/liquidations" data-family-types="FundingRate|MarkPrice|OpenInterestPoint[]|LiquidationEvent[]" data-family-call="Carry One requested perps.funding_rate">
-              <span class="family-number">04</span><strong>Perps / Futures</strong><em>Typed · Realtime · Execution</em><p>funding rate · funding history · mark price · open interest · long/short ratio · liquidation · ADL rank</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Options" data-family-endpoints="GET /options/chain|GET /options/greeks|GET /options/iv-surface|GET /options/settlement-history" data-family-types="OptionChain[]|GreeksSnapshot|IVSurfacePoint[]|SettlementRecord[]" data-family-call="Velora requested options.iv_surface">
-              <span class="family-number">05</span><strong>Options</strong><em>Typed · Realtime · Historical</em><p>option chain · metadata · latest quote · historical bars · Greeks · IV surface · settlement · exercise</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="FX & Fixed Income" data-family-endpoints="GET /fx/rates|GET /fx/crosses|GET /rates/yield-curve|GET /fixed-income/metadata" data-family-types="FXRate[]|CurrencyCross|YieldCurvePoint[]|BondMetadata[]" data-family-call="Custom App requested rates.yield_curve">
-              <span class="family-number">06</span><strong>FX & Fixed Income</strong><em>Typed · Historical · Macro</em><p>FX rates · crosses · yield curve · treasury series · bond metadata · rate snapshots</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Trading & Account Data" data-family-endpoints="GET /accounts/orders|GET /accounts/fills|GET /accounts/balances|GET /accounts/positions" data-family-types="Order[]|Fill[]|Balance[]|Position[]" data-family-call="IronHalo requested account.positions">
-              <span class="family-number">07</span><strong>Trading & Account Data</strong><em>Private · Permissioned · Execution</em><p>orders · fills · balances · positions · portfolio history · ledger · subaccounts · fees</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Private Realtime Streams" data-family-endpoints="STREAM /private/orders|STREAM /private/fills|STREAM /private/positions|STREAM /private/balances" data-family-types="OrderStreamEvent|FillStreamEvent|PositionStreamEvent|BalanceStreamEvent" data-family-call="IronHalo subscribed private.position_stream">
-              <span class="family-number">08</span><strong>Private Realtime Streams</strong><em>Private · Realtime · Audited</em><p>user orders · fills · positions · balances · restrictions · API status · private event stream</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Prediction Markets" data-family-endpoints="GET /prediction/events|GET /prediction/order-books|GET /prediction/prices|GET /prediction/positions" data-family-types="PredictionEvent[]|PredictionOrderBook|PredictionPricePoint[]|PredictionPosition[]" data-family-call="SigArc requested prediction.market.event">
-              <span class="family-number">09</span><strong>Prediction Markets</strong><em>Typed · Realtime · Historical</em><p>markets · events · tags · order books · midpoints · prices · spreads · price history · positions · volume</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="DeFi Swap" data-family-endpoints="GET /defi/swap/quote|GET /defi/swap/route|POST /defi/swap/calldata|GET /defi/gasless-orders" data-family-types="SwapQuote|SwapRoute|CalldataPayload|GaslessOrder[]" data-family-call="Custom App requested defi.swap_quote">
-              <span class="family-number">10</span><strong>DeFi Swap</strong><em>Typed · Execution · On-chain</em><p>swap quote · route · calldata · gasless orders · token approvals · execution estimate</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="DeFi Liquidity / Pools" data-family-endpoints="GET /defi/pools|GET /defi/tokens|GET /defi/gauges|GET /defi/pools/apy" data-family-types="Pool[]|Token[]|Gauge[]|APYPoint[]" data-family-call="Custom App requested defi.pool_apy">
-              <span class="family-number">11</span><strong>DeFi Liquidity / Pools</strong><em>Typed · Historical · On-chain</em><p>pools · tokens · gauges · APY · liquidity · volume · incentives · pool metadata</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="DeFi Lending" data-family-endpoints="GET /defi/lending/markets|GET /defi/lending/rates|GET /defi/lending/health-factor|GET /defi/lending/positions" data-family-types="LendingMarket[]|LendingRatePoint[]|HealthFactor|LendingPosition[]" data-family-call="Custom App requested lending.health_factor">
-              <span class="family-number">12</span><strong>DeFi Lending</strong><em>Typed · Risk · On-chain</em><p>lending markets · borrow rates · supply rates · health factor · collateral · liquidation threshold</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="On-chain / DeFi Aggregates" data-family-endpoints="GET /onchain/protocol-tvl|GET /onchain/chain-tvl|GET /onchain/dex-overview|GET /onchain/stablecoins" data-family-types="ProtocolTVL[]|ChainTVL[]|DEXOverview|StablecoinSupply[]" data-family-call="Custom App requested onchain.protocol_tvl">
-              <span class="family-number">13</span><strong>On-chain / DeFi Aggregates</strong><em>Typed · Historical · On-chain</em><p>protocol TVL · chain TVL · DEX overview · stablecoins · bridges · revenue · fees</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Macro Time Series" data-family-endpoints="GET /macro/series|GET /macro/observations|GET /macro/recent-updates|GET /macro/release-calendar" data-family-types="MacroSeries|MacroObservation[]|MacroUpdate[]|ReleaseDate[]" data-family-call="SigArc requested macro.release_calendar">
-              <span class="family-number">14</span><strong>Macro Time Series</strong><em>Typed · Historical · Calendar</em><p>observations · series metadata · recent updates · release dates · revisions · regional datasets</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Central Bank / International Stats" data-family-endpoints="GET /macro/central-bank|GET /macro/international-stats|GET /macro/policy-rates|GET /macro/balance-sheets" data-family-types="CentralBankSeries[]|InternationalStat[]|PolicyRate|BalanceSheetPoint[]" data-family-call="Custom App requested central_bank.policy_rates">
-              <span class="family-number">15</span><strong>Central Bank / International Stats</strong><em>Typed · Macro · Historical</em><p>央行统计 · policy rates · balance sheets · IMF / OECD / World Bank series · country metadata</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Energy Data" data-family-endpoints="GET /energy/datasets|GET /energy/inventory|GET /energy/prices|GET /energy/calendar" data-family-types="EnergyDataset[]|InventoryPoint[]|EnergyPrice[]|EnergyRelease[]" data-family-call="Custom App requested energy.inventory">
-              <span class="family-number">16</span><strong>Energy Data</strong><em>Typed · Macro · Calendar</em><p>energy datasets · inventories · crude · natural gas · power · release calendars · regional series</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="COT Positioning" data-family-endpoints="GET /positioning/cot|GET /positioning/futures|GET /positioning/commercials|GET /positioning/history" data-family-types="COTReport[]|FuturesPositioning|CommercialPosition[]|PositioningHistory[]" data-family-call="Custom App requested cot.futures_positioning">
-              <span class="family-number">17</span><strong>COT Positioning</strong><em>Typed · Weekly · Macro</em><p>COT futures positioning · commercials · leveraged funds · asset managers · history · changes</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Company / Regulatory Filings" data-family-endpoints="GET /filings/submissions|GET /filings/xbrl/facts|GET /filings/frames|GET /filings/form-4" data-family-types="CompanySubmission[]|XBRLFact[]|FinancialFrame[]|Form4Filing[]" data-family-call="Custom App requested filings.xbrl_facts">
-              <span class="family-number">18</span><strong>Company / Regulatory Filings</strong><em>Typed · Corporate · Historical</em><p>company submissions · XBRL facts · financial frames · Form 4 · annual reports · insider filings</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Corporate Actions & Calendars" data-family-endpoints="GET /corporate/actions|GET /corporate/earnings|GET /corporate/dividends|GET /corporate/splits" data-family-types="CorporateAction[]|EarningsEvent[]|Dividend[]|SplitEvent[]" data-family-call="Custom App requested corporate.earnings_calendar">
-              <span class="family-number">19</span><strong>Corporate Actions & Calendars</strong><em>Typed · Calendar · Corporate</em><p>earnings · dividends · splits · mergers · IPO calendar · events · symbol changes</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="Identifier & Symbol Intelligence" data-family-endpoints="GET /symbols/search|GET /symbols/map|GET /identifiers/resolve|GET /venues/metadata" data-family-types="SymbolSearchResult[]|SymbolMap|ResolvedIdentifier|VenueMetadata[]" data-family-call="Custom App requested identifiers.resolve">
-              <span class="family-number">20</span><strong>Identifier & Symbol Intelligence</strong><em>Typed · Metadata · Mapping</em><p>symbol search · identifier mapping · venue metadata · contract specs · logo · aliases · asset taxonomy</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="LLM APIs & Unstructured AI" data-family-endpoints="POST /llm/chat|POST /llm/reasoning|POST /llm/embeddings|POST /llm/vision" data-family-types="ChatCompletion|ReasoningTrace|EmbeddingVector[]|VisionAnalysis" data-family-call="SigArc requested llm.reasoning">
-              <span class="family-number">21</span><strong>LLM APIs & Unstructured AI</strong><em>LLM · Metered · CU</em><p>OpenAI · Claude · Gemini · streaming events · image generation · embeddings · TTS · STT</p>
-            </button>
-            <button type="button" class="data-family-strip" data-family-title="AI News / Research Context" data-family-endpoints="GET /research/ai-news|GET /research/daily-reports|GET /research/archives|GET /research/context" data-family-types="AINewsItem[]|DailyReport[]|ResearchArchive[]|ResearchContext" data-family-call="SigArc requested research.daily_report">
-              <span class="family-number">22</span><strong>AI News / Research Context</strong><em>Typed · Research · LLM</em><p>AI news · daily reports · daily archives · research context · summaries · source metadata</p>
-            </button>
-          </div>
         </div>
       </section>
       <section class="gateway-memory-bridge section-dark" aria-label="Gateway to SignalDB transition">
-        <p class="reveal">API Gateway 把金融世界接进来，SignalDB 把每一次变化写成可查询、可回放的交易时间线。</p>
+        <p class="reveal">API Gateway 把外部能力接进来，SignalDB 把关键变化写成可查询、可回放的时间线。</p>
       </section>
       <section class="signaldb section-dark" id="signaldb">
         <div class="section-kicker reveal">SignalDB</div>
-        <h2 class="section-title reveal">SignalDB 是 SignalPlusOS 内置的交易级金融时序数据库</h2>
+        <h2 class="section-title reveal">SignalDB，把运行状态写成可查询、可回放的时间线。</h2>
         <p class="section-copy reveal">
-          面向 100TB 级热数据窗口、百万点/秒级写入压力、6 个月窗口内高并发查询，以及交易、风控、审计、运营多业务消费而设计。行情、订单簿、订单、成交、仓位、风险状态、Agent 决策和 App 事件，都可以按时间被写入、查询、聚合和回放。交易不是一张静态表，而是一条不断变化的时间线；SignalDB 让每个 App 都能站在这条时间线上工作。
+          SignalDB 是 SignalPlusOS 内置的时序数据库，面向持续写入、长窗口查询和多业务消费而设计。App 事件、系统状态、工具调用、Agent 决策、运行日志和关键结果，都可以按时间被写入、查询、聚合和回放。
         </p>
 
         <div class="signaldb-metrics reveal" aria-label="SignalDB performance anchors">
           <article>
             <strong>100TB</strong>
-            <span>Hot Data Window</span>
+            <span>热数据窗口</span>
           </article>
           <article>
             <strong>1M+ / sec</strong>
-            <span>Point Ingest Pressure</span>
+            <span>写入压力</span>
           </article>
           <article>
             <strong>6M</strong>
-            <span>Query Window</span>
+            <span>查询窗口</span>
           </article>
           <article>
             <strong>2x+</strong>
-            <span>Write Throughput Anchor</span>
+            <span>写入吞吐锚点</span>
           </article>
           <article>
             <strong>2–11x</strong>
-            <span>Heavy Query Anchor</span>
+            <span>重查询锚点</span>
           </article>
           <article>
             <strong>1B+</strong>
-            <span>Rows Tested</span>
+            <span>行级测试</span>
           </article>
         </div>
 
         <div class="signaldb-stage reveal" aria-label="SignalDB trading time-series engine">
           <div class="memory-grid" aria-hidden="true"></div>
           <div class="timeseries-streams" aria-label="Data streams written to SignalDB">
-            <span>Market Ticks</span>
-            <span>Order Book</span>
-            <span>Orders</span>
-            <span>Fills</span>
-            <span>Positions</span>
-            <span>Risk State</span>
-            <span>Agent Decisions</span>
+            <span>Tool Calls</span>
             <span>App Events</span>
+            <span>System State</span>
+            <span>Gateway Events</span>
+            <span>Runtime Logs</span>
+            <span>Cost Metrics</span>
+            <span>Agent Decisions</span>
+            <span>User Actions</span>
           </div>
           <div class="timeseries-flow flow-ingest"></div>
           <div class="timeseries-flow flow-serve"></div>
           <div class="memory-core">
             <span>SignalDB</span>
-            <strong>Trading Time-Series Engine</strong>
+            <strong>System Time-Series Engine</strong>
             <p>Write · Store · Query · Serve</p>
           </div>
           <div class="signaldb-core-tags" aria-label="SignalDB query modes">
@@ -831,58 +676,61 @@
             <span>Serve</span>
           </div>
           <div class="timeseries-consumers" aria-label="SignalDB consumers">
-            <span>Trading Apps</span>
-            <span>Risk Review</span>
-            <span>Audit Replay</span>
-            <span>Backtest</span>
-            <span>Ops Query</span>
+            <span>Apps</span>
+            <span>Ops Review</span>
+            <span>Replay</span>
             <span>Reports</span>
+            <span>Ops Query</span>
+            <span>Analytics</span>
           </div>
         </div>
 
         <div class="signaldb-cards reveal" aria-label="SignalDB features">
           <article>
-            <h3>100TB 级热数据窗口</h3>
-            <p>交易系统既要快速访问最近数据，也要保留可回放的历史时间线。SignalDB 面向 100TB 级热数据窗口与 TTL 策略设计，承接行情、订单簿、K 线、funding、Greeks、订单、成交、仓位和风险状态。</p>
+            <h3>大规模热数据窗口</h3>
+            <p>长期运行的 App 既要快速访问最近状态，也要保留可回放的历史时间线。SignalDB 面向热数据窗口与 TTL 策略设计。</p>
           </article>
           <article>
-            <h3>百万点/秒级写入压力</h3>
-            <p>撮合、行情、交易和风控指标会持续产生事件。SignalDB 面向百万点/秒级写入峰值与稳定性，把高频事件写入同一条交易时间线。</p>
+            <h3>持续写入压力</h3>
+            <p>App 事件、工具调用、指标和状态会持续产生。SignalDB 把这些高频变化写入同一条运行时间线。</p>
           </article>
           <article>
-            <h3>6 个月窗口内高并发查询</h3>
-            <p>App 可以回看 6 个月窗口内的行情变化、成交路径、资金费率、风险状态和 Agent 行为，支持聚合、排序、回放、复盘和风控分析。</p>
+            <h3>长窗口高并发查询</h3>
+            <p>App 可以回看长窗口内的数据变化、路径、状态和 Agent 行为，支持聚合、排序、回放、复盘和分析。</p>
           </article>
           <article>
-            <h3>一笔订单，一条时间线。</h3>
-            <p>SignalDB 可以按 order_id、user_id、product、venue、symbol、session_id 等业务键关联查询，把一笔订单从创建、路由、成交、仓位变化到风险状态的链路贯穿起来。</p>
+            <h3>一个对象，一条时间线。</h3>
+            <p>SignalDB 可以按 app_id、user_id、session_id、event_id、resource_id 等业务键关联查询，把一次运行从触发、调用、状态变化到结果记录贯穿起来。</p>
           </article>
         </div>
       </section>
-      <section class="infrastructure section-dark">
+      <section class="infrastructure section-dark" id="os-runtime-ops">
         <div class="wide-copy reveal">
-          <p class="section-kicker">Infrastructure Services</p>
-          <h2>AI 生成 App 不是壁垒。真正的壁垒在底层。</h2>
+          <p class="section-kicker">Runtime Ops</p>
+          <h2>长期运行，也是一种系统能力。</h2>
           <p>
-            Gateway、机构级数据、执行连接、QuantLab、风控、审计和贴近交易所的算力，是交易 Agent 无法自己补齐的基础设施。
+            SignalPlusOS 把告警、巡检、根因分析、变更、复盘和成本视图纳入运行层。App 不只是被启动，也需要被持续观察、理解和维护。
           </p>
         </div>
         <div class="infra-grid reveal" aria-label="SignalPlusOS infrastructure services">
-          <article><strong>Gateway Data</strong><span>curated market feeds</span></article>
-          <article><strong>Execution Connectivity</strong><span>multi-broker routing</span></article>
-          <article><strong>QuantLab Libraries</strong><span>pricing and simulation</span></article>
-          <article><strong>Risk Guardrails</strong><span>limits and rollback</span></article>
-          <article><strong>Audit Trail</strong><span>reconstructable events</span></article>
-          <article><strong>Protected Key Layer</strong><span>keys never exposed to apps</span></article>
+          <article><strong>事件中枢</strong><span>alerts, logs, system events</span></article>
+          <article><strong>主动巡检</strong><span>config, routes, metrics</span></article>
+          <article><strong>根因分析</strong><span>app to gateway to compute</span></article>
+          <article><strong>变更记录</strong><span>runtime changes tracked</span></article>
+          <article><strong>复盘视图</strong><span>timeline and records</span></article>
+          <article><strong>成本透视</strong><span>resources and usage</span></article>
         </div>
       </section>
       <section class="security section-dark" id="trust">
-        <div class="section-kicker reveal">Security & Trust</div>
-        <h2 class="section-title reveal">安全不是功能，是系统级设计。</h2>
+        <div class="section-kicker reveal">Security Boundary</div>
+        <h2 class="section-title reveal">安全不是功能，是系统边界。</h2>
+        <p class="section-copy reveal">
+          App 不直接接触密钥，不随意联网，不绕过权限。高风险动作需要经过系统授权，运行过程可以被记录、回放和复盘。
+        </p>
         <div class="security-stage reveal" aria-label="SignalPlusOS security decisions">
           <div class="request-stack">
-            <span>App requests order access</span>
-            <span>App requests position data</span>
+            <span>App requests data access</span>
+            <span>App requests action access</span>
             <span>App requests external network</span>
           </div>
           <div class="signalplusos-shield">
@@ -899,10 +747,10 @@
       </div>
       <div class="site-page" data-page="dev" id="page-dev">
       <section class="dev-tools-hero section-dark" id="dev-tools-hero">
-        <div class="section-kicker reveal">DevPod Studio</div>
-        <h2 class="section-title reveal">一间为交易 App 准备好的云端开发室。</h2>
+        <div class="section-kicker reveal">DevPod</div>
+        <h2 class="section-title reveal">一间为 App 准备好的云端开发室。</h2>
         <p class="section-copy reveal">
-          DevPod 是 SignalPlusOS.ai 为交易 App 准备的云端开发空间。Codex、Claude Code、SignalPlusOS 自有 Coding Agent、开发 skills、联网测试、Gateway 数据、权限规则、风控边界和 Marketplace 打包上下文，都在这里准备好。你在 DevPod 里调研、构建、测试和打包，完成后再安装到 CU 中安全运行。
+          DevPod 是 SignalPlusOS.ai 为 App 准备的云端开发空间。Codex、Claude Code、SignalPlusOS Agent、开发 skills、联网测试、Gateway 上下文、权限规则和打包发布环境，都在这里准备好。
         </p>
 
         <div class="dev-room-stage reveal" aria-label="DevPod cloud development room">
@@ -925,15 +773,15 @@
             <article>
               <span>Agent</span>
               <strong>SignalPlusOS Agent</strong>
-              <p>research trading intent</p>
+              <p>research app intent</p>
             </article>
           </div>
 
           <div class="dev-room-context" aria-label="Development context loaded">
             <span>Context loaded</span>
-            <strong>Gateway Data</strong>
+            <strong>Gateway Context</strong>
             <strong>Permission Rules</strong>
-            <strong>Risk Boundary</strong>
+            <strong>Runtime Boundary</strong>
             <strong>Marketplace Package</strong>
           </div>
 
@@ -950,7 +798,7 @@
                 <span>package</span>
               </div>
               <div class="room-editor">
-                <strong>trading_app.plan</strong>
+                <strong>agent_app.plan</strong>
                 <i class="line-long"></i>
                 <i class="line-mid"></i>
                 <i class="line-short"></i>
@@ -986,7 +834,7 @@
           <div class="dev-room-cu" aria-label="Install to Compute Unit">
             <span>Install to CU</span>
             <strong>Compute Unit Runtime</strong>
-            <p>Key Protected · Risk Guardrails · Audit On</p>
+            <p>Key Protected · Runtime Boundary · Audit On</p>
             <div class="cu-lock-lines">
               <i></i><i></i><i></i>
             </div>
@@ -995,18 +843,18 @@
       </section>
       <section class="agents section-light">
         <div class="section-kicker reveal">AI Coding Agents</div>
-        <h2 class="section-title reveal">把交易想法，交给适配过的 Coding Agents。</h2>
+        <h2 class="section-title reveal">把想法，交给适配过的 Coding Agents。</h2>
         <p class="section-copy reveal">
-          SignalPlusOS.ai 支持 Codex、Claude Code，也提供面向交易场景调校的自有 Coding Agent。它们运行在 DevPod 这个云端开发空间里，不只是写代码，而是理解 SignalPlusOS 的数据、执行、权限、风控和 CU 部署方式，把一个模糊的交易想法拆解成可运行、可安装、可发布的完整 App。
+          在 DevPod 里，Codex、Claude Code 和 SignalPlusOS Agent 不是裸接入的写代码工具。它们带着 SignalPlusOS 的上下文工作：Gateway、权限、状态、部署和 Marketplace 打包方式。
         </p>
 
         <div class="coding-agent-stage reveal" aria-label="SignalPlusOS adapted coding agents">
           <div class="agent-context">
             <span>SignalPlusOS Context</span>
             <strong>Gateway Data</strong>
-            <strong>Execution APIs</strong>
+            <strong>Action APIs</strong>
             <strong>Permission Rules</strong>
-            <strong>Risk Guardrails</strong>
+            <strong>Runtime Boundary</strong>
             <strong>CU Deployment</strong>
             <strong>Marketplace Package</strong>
           </div>
@@ -1036,28 +884,31 @@
         <div class="coding-agent-cards reveal" aria-label="AI Coding Agents features">
           <article>
             <h3>先做需求调研，再开始开发</h3>
-            <p>SignalPlusOS 自有 Coding Agent 可以先帮你拆解需求：这个 App 要解决什么问题、需要哪些数据、适合什么界面、有哪些风控边界、需要哪些权限，以及最终如何部署到 CU。</p>
+            <p>SignalPlusOS Agent 可以先帮你拆解需求：这个 App 要解决什么问题、需要哪些数据、适合什么界面、有哪些运行边界、需要哪些权限，以及最终如何部署到 CU。</p>
           </article>
           <article>
             <h3>Codex、Claude Code，接入 SignalPlusOS 开发环境</h3>
-            <p>SignalPlusOS.ai 支持 Codex 和 Claude Code，并为它们提供适配过的交易开发上下文：Gateway 数据、执行接口、权限规则、审计要求、CU 部署配置和 Marketplace 打包方式。</p>
+            <p>SignalPlusOS.ai 支持 Codex 和 Claude Code，并为它们提供适配过的开发上下文：Gateway、系统接口、权限规则、运行要求、CU 部署配置和 Marketplace 打包方式。</p>
           </article>
           <article>
             <h3>生成的不是代码片段，是完整 App</h3>
-            <p>Coding Agent 输出的不只是策略逻辑，还包括界面、参数配置、数据连接、执行路径、风控规则、审计链路和部署文件。App 可以直接安装到用户的 Compute Unit 中运行。</p>
+            <p>Coding Agent 输出的不只是代码片段，还包括界面、参数配置、数据连接、权限声明、运行配置和部署文件。App 可以直接安装到用户的 Compute Unit 中运行。</p>
           </article>
         </div>
       </section>
       <section class="magic section-dark">
         <div class="section-kicker reveal">一句话到 App</div>
         <h2 class="section-title reveal">一个自然语言动作，触发完整产品生成。</h2>
+        <p class="section-copy reveal">
+          你描述工作流，DevPod 中的 Coding Agents 会生成界面、逻辑、数据连接、执行参数、权限声明和运行配置，并打包成可以安装到 CU 的完整 App。
+        </p>
         <div class="magic-stage reveal" aria-label="From prompt to running app">
           <div class="conversation">
-            <div class="bubble user">做一个 BTC 资金费率套利策略，两腿任一失败就回滚。</div>
-            <div class="bubble agent">正在生成界面、策略逻辑、风控参数、执行连接和审计链路。</div>
+            <div class="bubble user">做一个能持续跟踪事件、提醒我处理异常的工作流。</div>
+            <div class="bubble agent">正在生成界面、业务逻辑、数据连接、权限声明和运行配置。</div>
           </div>
           <div class="generated-app">
-            <div class="app-chrome">Funding Arbitrage</div>
+            <div class="app-chrome">Agent Workflow</div>
             <div class="dashboard-line"></div>
             <div class="dashboard-cells">
               <span></span><span></span><span></span><span></span>
@@ -1073,11 +924,8 @@
       </div>
       <div class="site-page" data-page="market" id="page-market">
       <section class="apps section-light" id="apps">
-        <div class="section-kicker reveal">Financial Apps</div>
+        <div class="section-kicker reveal">Apps</div>
         <h2 class="section-title reveal">App 让生态活起来。</h2>
-        <p class="section-copy reveal">
-          策略只是开始。数据终端、风控、期权分析、事件对冲、组合管理，都可以成为 App。
-        </p>
         <div class="app-gallery reveal" aria-label="Financial app gallery">
           <article class="gallery-phone g-sigarc" aria-label="SigArc app screenshot">
             <img src="./assets/apps/sigarc.png" alt="SigArc event hedge app screenshot" />
@@ -1096,36 +944,22 @@
           </article>
         </div>
       </section>
-      <section class="marketplace section-light" id="marketplace">
-        <div class="section-kicker reveal">Marketplace</div>
-        <h2 class="section-title reveal">好 App 会流动，也会回报创造者。</h2>
-        <p class="section-copy reveal">
-          发现、安装、Fork、发布。收益沿贡献链回流，而运行始终发生在用户自己的 Compute Unit。
-        </p>
-        <div class="market-flow reveal" aria-label="Marketplace flow">
-          <div class="flow-step">Creator Builds</div>
-          <div class="flow-step">Publish</div>
-          <div class="flow-step target">Install to CU</div>
-          <div class="flow-step">Fork</div>
-          <div class="flow-step reward">Royalties Flow Back</div>
-        </div>
-      </section>
       <section class="installer section-light">
         <div class="split-layout reverse">
           <div class="installer-panel reveal" aria-label="SignalPlusOS installer">
             <div class="installer-title">
               <span>SignalPlusOS Installer</span>
-              <strong>Install IronHalo</strong>
+              <strong>Install App</strong>
             </div>
-            <div class="install-row"><span>Deploy to</span><strong>CU Max - Tokyo</strong></div>
+            <div class="install-row"><span>Deploy to</span><strong>My Compute Unit</strong></div>
             <div class="permission-list">
               <label><span></span>Read Data</label>
-              <label><span></span>Place Orders</label>
+              <label><span></span>Use Actions</label>
               <label><span></span>Use LLM</label>
-              <label><span></span>Access Position</label>
+              <label><span></span>Write Events</label>
             </div>
             <div class="guardrail-row">
-              <span>Risk Limit</span>
+              <span>Runtime Boundary</span>
               <strong>On</strong>
             </div>
             <div class="guardrail-row">
@@ -1146,24 +980,172 @@
           </div>
         </div>
       </section>
+      <section class="marketplace section-light" id="marketplace">
+        <div class="section-kicker reveal">Marketplace</div>
+        <h2 class="section-title reveal">好 App 会流动，也会回报创造者。</h2>
+        <p class="section-copy reveal">
+          发现、安装、Fork、发布。收益沿贡献链回流，而运行始终发生在用户自己的 Compute Unit。
+        </p>
+        <div class="market-flow reveal" aria-label="Marketplace flow">
+          <div class="flow-step">Build in DevPod</div>
+          <div class="flow-step">Publish</div>
+          <div class="flow-step target">Install to CU</div>
+          <div class="flow-step">Fork</div>
+          <div class="flow-step reward">Royalties Flow Back</div>
+        </div>
+      </section>
+      </div>
+      <div class="site-page" data-page="solutions" id="page-solutions">
+      <section class="section-dark" id="trading-markets">
+        <div class="section-kicker reveal">Solutions</div>
+        <h2 class="section-title reveal">以 Trading &amp; Markets 为例，看完整生态如何落地。</h2>
+        <p class="section-copy reveal">
+          Trading &amp; Markets 需要长期在线、真实数据、执行连接、权限边界、时序数据库、低延迟网络和可追溯记录，因此最能展示 SignalPlusOS.ai 如何从开发、运行、系统能力到 App 市场形成闭环。
+        </p>
+      </section>
+
+      <section class="runtime-challenges section-light" id="why-trading">
+        <div class="section-kicker reveal">Why Trading</div>
+        <h2 class="section-title reveal">真实市场，需要专门的运行环境。</h2>
+        <p class="section-copy reveal">
+          Trading &amp; Markets 不是普通 App 场景。执行会带来真实 PNL，市场 24/7 运转，每个 venue 都有自己的规则和失败模式，数据成本高，网络路径影响成交，记录必须可回放。
+        </p>
+        <div class="challenge-grid reveal" aria-label="Why trading needs its own environment">
+          <article><span>01</span><h3>真实 PNL</h3><p>错时入场、数据抖动、密钥泄露，都会变成真实损失。</p></article>
+          <article><span>02</span><h3>24/7 全球市场</h3><p>交易 Agent 不能依赖本地电脑、手机或随时可能断开的脚本。</p></article>
+          <article><span>03</span><h3>每个 Venue 都是一个世界</h3><p>每个交易场所有自己的接口、规则、失败模式和数据习惯。</p></article>
+          <article><span>04</span><h3>Co-location 与专线</h3><p>交易执行不只看代码，也看网络路径。CU 可以靠近关键交易场所，并通过专线连接交易集群。</p></article>
+          <article><span>05</span><h3>Curated Institutional Data</h3><p>高质量行情、期权、宏观、链上和披露数据往往昂贵复杂，需要平台化接入。</p></article>
+          <article><span>06</span><h3>可回放记录</h3><p>执行细节、参数变化、撤单记录和状态变化，需要事后能够还原。</p></article>
+        </div>
+      </section>
+
+      <section class="colo-network section-dark" id="trading-colo-network">
+        <div class="section-kicker reveal">Co-location Network</div>
+        <h2 class="section-title reveal">把 CU 放到更靠近市场的地方。</h2>
+        <p class="section-copy reveal">
+          交易所和券商分布在全球不同区域。SignalPlusOS.ai 可以把 Compute Unit 部署在更靠近关键交易场所的区域，并通过跨区域专线连接不同交易集群，减少公共互联网路径带来的不确定性。
+        </p>
+        <div class="network-stage reveal" aria-label="Trading co-location network">
+          <div class="network-map">
+            <div class="network-line line-tokyo-singapore"></div>
+            <div class="network-line line-singapore-london"></div>
+            <div class="network-line line-london-newyork"></div>
+            <div class="network-line line-newyork-tokyo"></div>
+            <article class="network-node node-tokyo"><strong>Tokyo</strong><span>Market-adjacent zone</span></article>
+            <article class="network-node node-singapore"><strong>Singapore</strong><span>Gateway route</span></article>
+            <article class="network-node node-london"><strong>London</strong><span>Private line</span></article>
+            <article class="network-node node-newyork"><strong>New York</strong><span>Execution route</span></article>
+            <div class="network-core">
+              <span>CU Network Fabric</span>
+              <strong>Private trading routes</strong>
+              <p>Co-location · Gateway · Execution</p>
+            </div>
+          </div>
+        </div>
+        <div class="network-cards reveal" aria-label="Co-location network advantages">
+          <article><h3>靠近撮合引擎</h3><p>交易执行不是只看代码，也看网络路径。CU 可以部署在更靠近关键交易场所的区域。</p></article>
+          <article><h3>跨区域专线</h3><p>当交易工作流横跨亚洲、欧洲和美国市场，交易集群之间的专线可以降低链路不稳定性。</p></article>
+          <article><h3>比普通云服务器更像交易设备</h3><p>普通云服务器给你算力；CU 给你靠近市场的运行位置、交易网络、数据接入、执行连接和记录环境。</p></article>
+        </div>
+      </section>
+
+      <section class="typed-surface section-dark" id="financial-gateway">
+        <div class="section-kicker reveal">Financial API Gateway</div>
+        <h2 class="section-title reveal">把金融世界，接成 App 可以调用的系统接口。</h2>
+        <p class="section-copy reveal">
+          Trading App 不需要自己联网，也不需要逐个接数据源。Financial API Gateway 接入多资产行情、衍生品、期权、预测市场、DeFi、宏观经济、上市公司披露、能源、链上 TVL、LLM 推理与资讯等 typed data surface。
+        </p>
+        <div class="endpoint-lab reveal" aria-label="Financial typed data families">
+          <div class="data-family-wall">
+            <button type="button" class="data-family-strip" data-family-title="多资产实时 / 历史行情"><span class="family-number">01</span><strong>多资产实时 / 历史行情</strong><em>Typed · Realtime · Historical</em><p>ticker · latest trade · quote · order book · OHLCV · snapshot · auction · metadata</p></button>
+            <button type="button" class="data-family-strip" data-family-title="股票数据"><span class="family-number">02</span><strong>股票数据</strong><em>Typed · Historical · Metadata</em><p>latest trade · quotes · bars · market movers · most-active · logo · exchange metadata</p></button>
+            <button type="button" class="data-family-strip" data-family-title="加密现货数据"><span class="family-number">03</span><strong>加密现货数据</strong><em>Typed · Realtime · Metadata</em><p>price · order book · trades · OHLCV · snapshot · global market · trending coins</p></button>
+            <button type="button" class="data-family-strip" data-family-title="永续 / 期货数据"><span class="family-number">04</span><strong>永续 / 期货数据</strong><em>Typed · Realtime · Execution</em><p>funding rate · funding history · mark price · open interest · long/short ratio · liquidation · ADL rank</p></button>
+            <button type="button" class="data-family-strip" data-family-title="期权数据"><span class="family-number">05</span><strong>期权数据</strong><em>Typed · Realtime · Historical</em><p>option chain · metadata · latest quote · historical bars · Greeks · IV surface · settlement · exercise</p></button>
+            <button type="button" class="data-family-strip" data-family-title="外汇与固定收益"><span class="family-number">06</span><strong>外汇与固定收益</strong><em>Typed · Historical · Macro</em><p>FX rates · crosses · yield curve · treasury series · bond metadata · rate snapshots</p></button>
+            <button type="button" class="data-family-strip" data-family-title="交易与账户数据"><span class="family-number">07</span><strong>交易与账户数据</strong><em>Private · Permissioned · Execution</em><p>orders · fills · balances · positions · portfolio history · ledger · subaccounts · fees</p></button>
+            <button type="button" class="data-family-strip" data-family-title="私有实时流"><span class="family-number">08</span><strong>私有实时流</strong><em>Private · Realtime · Audited</em><p>user orders · fills · positions · balances · restrictions · API status · private event stream</p></button>
+            <button type="button" class="data-family-strip" data-family-title="预测市场数据"><span class="family-number">09</span><strong>预测市场数据</strong><em>Typed · Realtime · Historical</em><p>markets · events · tags · order books · midpoints · prices · spreads · price history · positions · volume</p></button>
+            <button type="button" class="data-family-strip" data-family-title="DeFi Swap"><span class="family-number">10</span><strong>DeFi Swap</strong><em>Typed · Execution · On-chain</em><p>swap quote · route · calldata · gasless orders · token approvals · execution estimate</p></button>
+            <button type="button" class="data-family-strip" data-family-title="DeFi Liquidity / Pool"><span class="family-number">11</span><strong>DeFi Liquidity / Pool</strong><em>Typed · Historical · On-chain</em><p>pools · tokens · gauges · APY · liquidity · volume · incentives · pool metadata</p></button>
+            <button type="button" class="data-family-strip" data-family-title="DeFi Lending"><span class="family-number">12</span><strong>DeFi Lending</strong><em>Typed · Risk · On-chain</em><p>lending markets · borrow rates · supply rates · health factor · collateral · liquidation threshold</p></button>
+            <button type="button" class="data-family-strip" data-family-title="链上 / DeFi 聚合指标"><span class="family-number">13</span><strong>链上 / DeFi 聚合指标</strong><em>Typed · Historical · On-chain</em><p>protocol TVL · chain TVL · DEX overview · stablecoins · bridges · revenue · fees</p></button>
+            <button type="button" class="data-family-strip" data-family-title="宏观经济时间序列"><span class="family-number">14</span><strong>宏观经济时间序列</strong><em>Typed · Historical · Calendar</em><p>observations · series metadata · recent updates · release dates · revisions · regional datasets</p></button>
+            <button type="button" class="data-family-strip" data-family-title="央行 / 国际组织统计"><span class="family-number">15</span><strong>央行 / 国际组织统计</strong><em>Typed · Macro · Historical</em><p>央行统计 · policy rates · balance sheets · IMF / OECD / World Bank series · country metadata</p></button>
+            <button type="button" class="data-family-strip" data-family-title="能源数据"><span class="family-number">16</span><strong>能源数据</strong><em>Typed · Macro · Calendar</em><p>energy datasets · inventories · crude · natural gas · power · release calendars · regional series</p></button>
+            <button type="button" class="data-family-strip" data-family-title="期货持仓报告"><span class="family-number">17</span><strong>期货持仓报告</strong><em>Typed · Weekly · Macro</em><p>COT futures positioning · commercials · leveraged funds · asset managers · history · changes</p></button>
+            <button type="button" class="data-family-strip" data-family-title="上市公司 / 监管披露"><span class="family-number">18</span><strong>上市公司 / 监管披露</strong><em>Typed · Corporate · Historical</em><p>company submissions · XBRL facts · financial frames · Form 4 · annual reports · insider filings</p></button>
+            <button type="button" class="data-family-strip" data-family-title="公司行动与市场日历"><span class="family-number">19</span><strong>公司行动与市场日历</strong><em>Typed · Calendar · Corporate</em><p>earnings · dividends · splits · mergers · IPO calendar · events · symbol changes</p></button>
+            <button type="button" class="data-family-strip" data-family-title="标识符与 Symbol 智能"><span class="family-number">20</span><strong>标识符与 Symbol 智能</strong><em>Typed · Metadata · Mapping</em><p>symbol search · identifier mapping · venue metadata · contract specs · logo · aliases · asset taxonomy</p></button>
+            <button type="button" class="data-family-strip" data-family-title="AI 与非结构化能力"><span class="family-number">21</span><strong>AI 与非结构化能力</strong><em>LLM · Metered · CU</em><p>OpenAI · Claude · Gemini · streaming events · image generation · embeddings · TTS · STT</p></button>
+            <button type="button" class="data-family-strip" data-family-title="AI 资讯 / 研究上下文"><span class="family-number">22</span><strong>AI 资讯 / 研究上下文</strong><em>Typed · Research · LLM</em><p>AI news · daily reports · daily archives · research context · summaries · source metadata</p></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="infrastructure section-dark" id="protected-runtime">
+        <div class="wide-copy reveal">
+          <p class="section-kicker">Protected Runtime</p>
+          <h2>真实交易必须在边界里运行。</h2>
+          <p>App 不直接碰密钥，不随意联网，不绕过权限。SignalPlusOS 统一管理 Key、权限、执行、风控和运行边界，让 Trading App 在可控环境中运行。</p>
+        </div>
+        <div class="infra-grid reveal" aria-label="Protected runtime guardrails">
+          <article><strong>Key Protected</strong><span>keys never exposed to apps</span></article>
+          <article><strong>No External Network</strong><span>gateway-mediated access</span></article>
+          <article><strong>Permissioned Execution</strong><span>actions require authority</span></article>
+          <article><strong>Risk Guardrails</strong><span>limits and rollback</span></article>
+          <article><strong>Replayable Records</strong><span>state can be reviewed</span></article>
+          <article><strong>Runtime Ops</strong><span>alerts and patrols</span></article>
+        </div>
+      </section>
+
+      <section class="section-light" id="trading-create-run">
+        <div class="section-kicker reveal">Create &amp; Run</div>
+        <h2 class="section-title reveal">从 DevPod 创建，到 Compute Unit 运行。</h2>
+        <p class="section-copy reveal">
+          用自然语言描述交易工作流，Codex、Claude Code 和 SignalPlusOS Agent 可以在 DevPod 中调研需求、生成界面、接入 Gateway、配置权限和风控，并打包成完整 App。Trading App 不跑在手机或浏览器里，而是安装到自己的 CU，承载运行状态、资源、告警、巡检、风控和长期记录。
+        </p>
+        <div class="market-flow reveal" aria-label="Trading app lifecycle">
+          <div class="flow-step">Create in DevPod</div>
+          <div class="flow-step">Package</div>
+          <div class="flow-step target">Install to CU</div>
+          <div class="flow-step">24/7 Runtime</div>
+          <div class="flow-step reward">Replay Records</div>
+        </div>
+      </section>
+
+      <section class="signalplus section-dark" id="signalplus-built">
+        <div class="section-kicker reveal">Built by SignalPlus</div>
+        <h2 class="section-title reveal">从交易工具，到 Agentic Trading Environment。</h2>
+        <p class="section-copy reveal">
+          SignalPlus 的演进一直围绕专业交易基础设施展开：从 Trading Terminal，到 MMBot，到 Structured Products Automation，再到 SignalPlusOS.ai。
+        </p>
+        <div class="timeline reveal" aria-label="SignalPlus evolution">
+          <article><span>2022</span><strong>Trading Terminal</strong><p>Professional options trading suite.</p></article>
+          <article><span>2022–2023</span><strong>MMBot</strong><p>24/7 automated risk management.</p></article>
+          <article><span>2023</span><strong>Structured Products Automation</strong><p>On-demand RFQ and issuance hedging.</p></article>
+          <article class="active"><span>2026+</span><strong>SignalPlusOS.ai</strong><p>Cloud computing ecosystem for agentic trading.</p></article>
+        </div>
+      </section>
       </div>
       <div class="site-page" data-page="alpha" id="page-alpha">
       <section class="alpha section-light" id="alpha">
         <div class="section-kicker reveal">Alpha / Configure</div>
-        <h2 class="section-title reveal">开始构建你的云端交易系统。</h2>
+        <h2 class="section-title reveal">申请进入 SignalPlusOS.ai Alpha。</h2>
         <p class="section-copy reveal">
-          选择 Compute Unit，申请 Alpha，创建、安装或发布你的第一个 SignalPlusOS App。
+          配置 Compute Unit，申请 DevPod，创建、安装或发布你的第一个 App。
         </p>
         <div class="configure reveal" aria-label="Configure SignalPlusOS.ai">
           <div class="configure-device">
             <div class="model-device ultra large"></div>
             <h3>选择 CU Ultra</h3>
-            <p>Dedicated runtime, institutional data, private audit vault.</p>
+            <p>Dedicated runtime, system interfaces, private records.</p>
           </div>
           <div class="identity-grid">
-            <a href="#alpha">我是交易者</a>
-            <a href="#alpha">我是量化 / 开发者</a>
-            <a href="#alpha">我是创作者</a>
+            <a href="#alpha">我想配置 CU</a>
+            <a href="#alpha">我想申请 DevPod</a>
+            <a href="#alpha">我想发布 App</a>
             <a href="#alpha">我代表机构</a>
           </div>
         </div>
